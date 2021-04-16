@@ -10,6 +10,11 @@ import "../styles/index.scss";
 
 //import your own components
 import { Home } from "./component/home.js";
-
+// ReactDOM.render(<Home />, document.querySelector("#app"));
 //render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+let counter = 0;
+setInterval(function() {
+	counter++,
+		alert(counter),
+		ReactDOM.render(<Home />, document.querySelector("#app"));
+}, 3000);

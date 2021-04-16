@@ -1,24 +1,37 @@
 import React from "react";
-
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+import { Navbar, Container, Row } from "react-bootstrap";
 
 //create your first component
 export function Home() {
 	return (
-		<div className="text-center mt-5">
-			<h1>Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+		<div>
+			<Navbar className="bg-dark py-5">
+				<Container className="justify-content-between">
+					<div className="col-1 bg-secondary py-3 text-center">
+						<h1 className="display-1">
+							<i className="bi bi-alarm"></i>
+						</h1>
+					</div>
+					<div className="col-1 bg-secondary py-3 text-center">
+						<h1 className="display-1">8</h1>
+					</div>
+					<div className="col-1 bg-secondary py-3 text-center">
+						<h1 className="display-1">0</h1>
+					</div>
+					<div className="col-1 bg-secondary py-3 text-center">
+						<h1 className="display-1">9</h1>
+					</div>
+					<div className="col-1 bg-secondary py-3 text-center">
+						<h1 className="display-1">6</h1>
+					</div>
+					<div className="col-1 bg-secondary py-3 text-center">
+						<h1 className="display-1">0</h1>
+					</div>
+					<div className="col-1 bg-secondary py-3 text-center">
+						<h1 className="display-1">6</h1>
+					</div>
+				</Container>
+			</Navbar>
 		</div>
 	);
 }
