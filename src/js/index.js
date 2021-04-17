@@ -19,4 +19,4 @@ setInterval(function() {
 			<Home counter={mcounter} />,
 			document.querySelector("#app")
 		);
-}, 2000);
+}, 1000);
