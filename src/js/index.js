@@ -12,9 +12,11 @@ import "../styles/index.scss";
 import { Home } from "./component/home.js";
 // ReactDOM.render(<Home />, document.querySelector("#app"));
 //render your react application
-let counter = 0;
+let mcounter = 0;
 setInterval(function() {
-	counter++,
-		alert(counter),
-		ReactDOM.render(<Home />, document.querySelector("#app"));
-}, 3000);
+	mcounter++,
+		ReactDOM.render(
+			<Home counter={mcounter} />,
+			document.querySelector("#app")
+		);
+}, 2000);
